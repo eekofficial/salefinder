@@ -1,0 +1,76 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+{% load sizes %}
+
+{% block nav-global %}
+    <div class="sizes-container"><div class="sizes">
+        <div class="sizes-block male">
+            <span class="gender">Разослано сегодня <b>мужчинам:</b></span>
+            <div class="sizes-line">
+                <span class="size integral">38: <b>{% men_size_amount 38 %}</b></span>
+                <span class="size fractional">38.5: <b>{% men_size_amount 38.5 %}</b></span>
+                <span class="size integral">39: <b>{% men_size_amount 39 %}</b></span>
+                <span class="size fractional">39.5: <b>{% men_size_amount 39.5 %}</b></span>
+                <span class="size integral">40: <b>{% men_size_amount 40 %}</b></span>
+                <span class="size fractional">40.5: <b>{% men_size_amount 40.5 %}</b></span>
+            </div>
+            <div class="sizes-line">
+                <span class="size integral">41: <b>{% men_size_amount 41 %}</b></span>
+                <span class="size fractional">41.5: <b>{% men_size_amount 41.5 %}</b></span>
+                <span class="size integral">42: <b>{% men_size_amount 42 %}</b></span>
+                <span class="size fractional">42.5: <b>{% men_size_amount 42.5 %}</b></span>
+                <span class="size integral">43: <b>{% men_size_amount 43 %}</b></span>
+                <span class="size fractional">43.5: <b>{% men_size_amount 43.5 %}</b></span>
+            </div>
+            <div class="sizes-line">
+                <span class="size integral">44: <b>{% men_size_amount 44 %}</b></span>
+                <span class="size fractional">44.5: <b>{% men_size_amount 44.5 %}</b></span>
+                <span class="size integral">45: <b>{% men_size_amount 45 %}</b></span>
+                <span class="size fractional">45.5: <b>{% men_size_amount 45.5 %}</b></span>
+                <span class="size integral">46: <b>{% men_size_amount 46 %}</b></span>
+                <span class="size fractional">46.5: <b>{% men_size_amount 46.5 %}</b></span>
+            </div>
+            <div class="sizes-line">
+                <span class="size integral">47: <b>{% men_size_amount 47 %}</b></span>
+                <span class="size fractional">47.5: <b>{% men_size_amount 47.5 %}</b></span>
+            </div>
+        </div>
+
+        <div class="sizes-block female">
+            <span class="gender">Разослано сегодня <b>женщинам:</b></span>
+            <div class="sizes-line">
+                <span class="size integral">36: <b>{% women_size_amount 36 %}</b></span>
+                <span class="size fractional">36.5: <b>{% women_size_amount 36.5 %}</b></span>
+                <span class="size integral">37: <b>{% women_size_amount 37 %}</b></span>
+                <span class="size fractional">37.5: <b>{% women_size_amount 37.5 %}</b></span>
+                <span class="size integral">38: <b>{% women_size_amount 38 %}</b></span>
+                <span class="size fractional">38.5: <b>{% women_size_amount 38.5 %}</b></span>
+            </div>
+            <div class="sizes-line">
+                <span class="size integral">39: <b>{% women_size_amount 39 %}</b></span>
+                <span class="size fractional">39.5: <b>{% women_size_amount 39.5 %}</b></span>
+                <span class="size integral">40: <b>{% women_size_amount 40 %}</b></span>
+                <span class="size fractional">40.5: <b>{% women_size_amount 40.5 %}</b></span>
+                <span class="size integral">41: <b>{% women_size_amount 41 %}</b></span>
+                <span class="size fractional">41.5: <b>{% women_size_amount 41.5 %}</b></span>
+            </div>
+            <div class="sizes-line">
+                <span class="size integral">42: <b>{% women_size_amount 42 %}</b></span>
+                <span class="size fractional">42.5: <b>{% women_size_amount 42.5 %}</b></span>
+                <span class="size integral">43: <b>{% women_size_amount 43 %}</b></span>
+                <span class="size fractional">43.5: <b>{% women_size_amount 43.5 %}</b></span>
+            </div>
+            <div class="sizes-line">
+                <span style="visibility: hidden;">0</span>
+            </div>
+        </div>
+
+        {% autoescape off %}{% unread_messages %}{% endautoescape %}
+    </div></div>
+{% endblock %}

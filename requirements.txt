@@ -1,0 +1,9 @@
+requests
+
+django
+django-preferences
+django-dynamic-preferences
+django-modeladmin-reorder
+django-settings-export
+
+pytelegrambotapi

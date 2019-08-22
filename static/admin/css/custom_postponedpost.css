@@ -1,0 +1,16 @@
+input[name=_addanother],
+input[name=_continue] {
+    display: none !important;
+}
+
+.historylink {
+    display: none !important;
+}
+
+fieldset .description {
+    display: none !important;
+}
+
+.field-draft > div > div.related-widget-wrapper > a {
+    display: none !important;
+}

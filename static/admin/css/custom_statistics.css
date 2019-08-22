@@ -1,0 +1,11 @@
+#content > h1 {
+    display: none !important;
+}
+
+.object-tools {
+    display: none !important;
+}
+
+.submit-row {
+    display: none !important;
+}

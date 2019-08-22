@@ -1,0 +1,64 @@
+.historylink {
+    display: none !important;
+}
+
+.field-user_link a {
+    color: rgb(100, 100, 100) !important;
+    font-weight: bold;
+}
+
+fieldset .description {
+    display: none !important;
+}
+
+.field-draft > div > div.related-widget-wrapper > a {
+    display: none !important;
+}
+
+
+.dialog {
+    padding-top: 5px;
+}
+
+.dialog-image {
+    display: block;
+}
+
+.dialog-image > img {
+    max-width: 130px;
+    max-height: 130px;
+}
+
+.dialog-message {
+    min-width: 51%;
+    max-width: 80%;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+
+    background-color: rgb(220, 220, 220);
+}
+
+.dialog-message-text {
+    margin-bottom: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.dialog-message-time {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.dialog-button {
+    color: black !important;
+}
+
+.dialog-message.user-message {
+    float: left;
+}
+
+.dialog-message.support-message {
+    float: right;
+}
